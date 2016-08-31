@@ -1,0 +1,21 @@
+<nav ng-show="pagination.isShow">
+    <ul class="pagination">
+
+
+        <li>
+            <a href="" aria-label="Previous" ng-click="clickPagination(pagination.first.num)">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+
+        <li ng-repeat="item in pagination.page" class="{{item.style}}"><a href="" ng-click="clickPagination(item.num)">{{item.num}}</a>
+        </li>
+
+        <li>
+            <a href="" aria-label="Next" ng-click="clickPagination(pagination.last.num)">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
